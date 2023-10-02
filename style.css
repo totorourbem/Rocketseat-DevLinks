@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: white;
+    --bg-url: url(./assets/bg-mobile.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.6);
+}
+
+.light{
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.3);
+}
+
+.friday {
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-friday.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.3);
+}
+
+
+body {
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+#container {
+    width: 100%;
+    max-width: 588px;
+    height: 712px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+    display: inline-block;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white url(./Assets/star-outline.svg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.4s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--stroke-color);
+}
+
+.light #switch button {
+    animation: slide-in 0.4s forwards;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--stroke-color);
+    border: 1px solid black;
+    border-radius: 9999px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/*links */
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    gap: 16px;
+    padding: 24px 0;
+}
+ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    padding: 16px 24px;
+    background: var(--stroke-color);
+    border: 1px rgba(0, 0, 0, 0);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.4s;
+}
+
+ul li a:hover {
+    background: rgba(0, 0, 0, 0.02);
+    border: 2px solid var(--text-color);
+}
+
+.button-icon {
+    transition: transform 0.3s ease;
+}    
+
+.button-icon:hover {
+    transform: scale(3.2);
+}    
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+    font-size: 32px;
+
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+    border-radius: 50%;
+}
+
+#social-links a:hover {
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    width: 48px;
+    transition: transform 0.5s ease; 
+}
+
+.social-icons:hover {
+    transform: scale(1.5);
+}
+
+footer{
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14 px;
+    font-weight: 500;
+    background: var(--stroke-color);
+    border-radius: 16px;
+}
+
+@media (min-width: 700px){
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+    .friday {
+        --bg-url: url(./assets/bg-desktop-friday.jpg);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+}
