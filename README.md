@@ -3,7 +3,7 @@
 ![HTML5](https://img.shields.io/static/v1?label=HTML5&labelColor=00ced1&message=ok!✔&style=plastic&color=orange&logo=HTML5&logoColor=orange)
 ![CSS3](https://img.shields.io/static/v1?label=CSS3&labelColor=yellow&message=ok!✔&style=plastic&color=navy&logo=CSS3&logoColor=navy)
 ![JavaScript](https://img.shields.io/static/v1?label=JavaScript&labelColor=black&message=ok!✔&style=plastic&color=fffd1e&logo=javascript&çogoColor=yellow)
-![Heroku](https://img.shields.io/static/v1?label=Heroku&labelColor=navy&message=deploy_soon⏳&color=orange&style=plastic&logo=heroku)
+![Hosted by InfinityFree](https://img.shields.io/static/v1?label=InfinityFree∞&labelColor=purple&message=ok✅&color=green&style=plastic&logo=)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?label=⚖License&logo=balance-scale&logoColor=white&style=plastic)](https://opensource.org/licenses/MIT)
 [![Rocketseat](https://img.shields.io/static/v1?label=🚀Rocketseat&labelColor=purple&message=ok!&color=black&style=plastic&&logoXcolor=white)](https://www.rocketseat.com.br/)
 
@@ -34,7 +34,7 @@
 
 ## Layout ou Deploy da Aplicação :dash:
 
-Em implementação...
+[ONLINE](http://totorourbem-devlinks.free.nf/)
 
 ## Pré-requisitos
 
